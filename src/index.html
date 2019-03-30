@@ -1,0 +1,27 @@
+<head>
+    <title>Taut or Not</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+
+<body>
+    <div class="main">
+        
+        <canvas id="canvas"></canvas>
+
+        <div class="video">
+            <video id="video"><p>Please enable your webcam.</p></video>
+                <!-- <video id="video" src="C:\Users\nashd\Downloads\SampleVideo_1280x720_5mb.mp4"></video>Video stream not available.</video> -->
+        </div>
+
+
+        <div class="classification">
+            <button id="debugbutton" onclick="getData();">Debug me</button>
+            <p>Classification:</p>
+            <p id="classification"></p>
+        </div>
+
+    </div> 
+    <script src="canny.min.js"></script>
+    <script src="index.js"></script>
+
+</body>

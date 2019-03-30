@@ -1,0 +1,23 @@
+body{
+    margin: 0 auto;
+}
+
+.main{
+    text-align: center;
+    margin-top: 2em;
+}
+
+.video{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+.video video{;
+    height: inherit;
+}
+
+#video{
+}
