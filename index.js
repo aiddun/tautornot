@@ -58,6 +58,7 @@ function getData() {
 
     
     tautness = tautfind(imageData.data);
+    document.getElementById("tautness").innerHTML = "";
     document.getElementById("tautness").innerHTML = tautness;
     console.log(tautness);
 
