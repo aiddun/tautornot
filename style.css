@@ -1,0 +1,43 @@
+body{
+    margin: 0 auto;
+    background-color: #cb5c0d;
+}
+
+.main{
+    text-align: center;
+    /* margin-top: 2em; */
+}
+
+.video{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+.video video{
+}
+
+#video{
+}
+
+#canvas{
+    display: none;
+}
+
+.classification{
+    font-family: Helvetica, Arial, sans-serif;
+    color: white;
+    /* padding-top: 2em; */
+    line-height: 1em;
+    padding-top: .4em;
+}
+
+.header {
+    color: white;
+    font-family: Helvetica, Arial, sans-serif;
+    text-align: center;
+    padding-top: .02;
+    font-size: 14pt;
+}

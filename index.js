@@ -34,6 +34,7 @@ function startup() {
             canvas.setAttribute('width', width);
             canvas.setAttribute('height', height);
             streaming = true;
+
         }
         }, false);
 
@@ -46,16 +47,61 @@ startup();
 // }
 
 function getData() {
-    console.log("Getting data")
+    // console.log("Getting data")
     var context = canvas.getContext('2d');
     context.fillRect(0, 0, canvas.width, canvas.height);
     context.drawImage(video, 0, 0, width, height);    
-    var img = context.getImageData(0, 0, canvas.width, canvas.height);
+    // var imgData = context.getImageData(0, 0, canvas.width, canvas.height);
+    
+    imageData = CannyJS.canny(canvas);
+    imageData.drawOn(canvas);
+
+    
+    tautness = tautfind(imageData.data);
+    document.getElementById("tautness").innerHTML = tautness;
+    console.log(tautness);
+
+    tautDetermine(tautness);
 
     };
 
-getData();
+function tautDetermine(tautness){
+    console.log(tautness);
+    if (tautness > .4){
+        tautornot = document.getElementById("tautornot").innerHTML = "Taut";
+    }
+    else{
+        tautornot = document.getElementById("tautornot").innerHTML = "Not Taut";
+    }
+}
 
+function tautfind(imgdata){
+    
+    var x = []
+    var y = []
+
+    // console.log(imgdata)
+
+
+    for (let i = 1; i < width - 1; i++){
+        for (let j = 1; j < height - 1; j++){
+            // if (i < 5){
+            //     console.log(imgdata[i * height + width]);}
+            if (imgdata[i][j] == 255){
+                x.push(i);
+                y.push(j);
+            }
+        }
+    }
+    
+    for(let i = 50; i < 70; i++){console.log(String(x[i]) + " " + String(y[i]))}
+
+    var R = pearsonCorrelation(x,y);
+    R = R ** 2
+    
+    return Number((R).toFixed(2));
+}
+        
 
 // Correlation Coefficient
 
