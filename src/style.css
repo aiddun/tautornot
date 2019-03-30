@@ -4,7 +4,7 @@ body{
 
 .main{
     text-align: center;
-    margin-top: 2em;
+    /* margin-top: 2em; */
 }
 
 .video{
@@ -15,9 +15,16 @@ body{
     text-align: center;
 }
 
-.video video{;
-    height: inherit;
+.video video{
+    height: 100vh;
 }
 
 #video{
+}
+
+#canvas{
+    /* display: none; */
+}
+
+#classification{
 }
