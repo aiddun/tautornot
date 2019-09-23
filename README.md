@@ -4,6 +4,6 @@ The idea is actually pretty novel. It runs canny edge detection on a captured im
 
 The only problem with this current approach is it requires a solid (edgeless) background.
 
-This approach is wicked fast, and doesn't rely on any fancy neural networks/DL. With this approach, however, I guess that you could argue that it uses "machine learning"...
+This approach is wicked fast, and doesn't rely on any fancy neural networks/DL. With this approach, however, I guess that you could argue that it does use "machine learning"...
 
 ```taut v ~taut, it's a tautology!```
