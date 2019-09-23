@@ -4,6 +4,14 @@ The implementation is actually pretty interesting. It runs canny edge detection 
 
 The only problem with this current approach is it requires a solid (edgeless) background.
 
-This approach is wicked fast, and doesn't rely on any fancy neural networks/DL. With this approach, however, I guess that you could argue that it does use "machine learning"...
+This approach is wicked fast and small, and doesn't rely on any fancy neural networks/DL. With this approach, however, I guess that you could argue that it does use "machine learning"...
 
 ```taut v ~taut, it's a tautology!```
+
+<br/>
+<br/>
+
+
+__Slide deck:__
+
+I hastily threw together a mock pitch deck for this to present while judges were deliberating during a high school hackathon I helped run. [enjoy?](https://docs.google.com/presentation/d/e/2PACX-1vQJa3ZWb6a5wQrQxz4Gj7tJPFp2NcMs8Qy-r1H7MZCeoJy2xck3fsIzBjqXI2_O0JsndrpKb1wLt3r3/pub?start=false&loop=false&delayms=60000)
